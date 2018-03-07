@@ -1,5 +1,4 @@
-
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import gi, urllib, os
 gi.require_version('Gtk', '3.0')
@@ -130,7 +129,6 @@ class Gdeb(Gtk.FileChooserDialog):
         self.Hbox.pack_start(self.DesktopIconLabel, True, True, 0)
         self.Hbox.pack_start(self.DesktopIconComboBoxText, False, True, 0)
         self.Hbox.pack_start(self.DesktopIconButton, False, True, 0)
-
         self.ListBox.add(self.BoxRow)
         self.BoxRow = Gtk.ListBoxRow()
         self.Hbox = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=1)
@@ -140,7 +138,6 @@ class Gdeb(Gtk.FileChooserDialog):
         self.DesktopIconComboBoxTextWarning.set_sensitive(True)
         self.Hbox.pack_start(self.DesktopIconLabelWarning, True, True, 0)
         self.Hbox.pack_start(self.DesktopIconComboBoxTextWarning, False, True, 0)
-
         self.ListBox.add(self.BoxRow)
         self.BoxRow = Gtk.ListBoxRow()
         self.Hbox = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=50)
